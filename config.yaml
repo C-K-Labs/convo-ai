@@ -16,17 +16,23 @@ audio:
   sample_rate: 16000
   channels: 1
   chunk_size: 1024
+  format: "wav"
+
+# STT settings
+stt:
+  engine: "whisper"
+  whisper_cpp_path: "whisper/whisper-cli.exe"
+  model_path: null
+  
+# TTS settings
+tts:
+  engine: "piper"
+  piper_path: "piper/piper.exe"
+  voices_path: "piper/espeak-ng-data/voices/lv"
+  default_voice: "Andrea"
 
 # Application settings
 app:
   debug: true
   log_level: "INFO"
-  
-# Future components (for later implementation)
-stt:
-  engine: "whisper"
-  model: "base"
-  
-tts:
-  engine: "piper"
-  voice: "en_US-lessac-medium"
+  mode: "mixed"

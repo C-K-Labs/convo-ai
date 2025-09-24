@@ -28,7 +28,7 @@ stt:
 tts:
   engine: "piper"
   piper_path: "piper/piper.exe"
-  voices_path: "piper/espeak-ng-data/voices/lv"
+  voices_path: "piper/espeak-ng-data/voices/!v"
   default_voice: "Andrea"
 
 # Application settings
